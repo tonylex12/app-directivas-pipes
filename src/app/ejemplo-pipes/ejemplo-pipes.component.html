@@ -1,5 +1,51 @@
 <div class="container py-5">
   <div class="alert alert-primary" role="alert">
-    {{ fechaActual }}
+    Fecha sin formato: {{ fechaActual }}
+    {{ fechaActual | date }}
+  </div>
+  <div class="alert alert-primary" role="alert">
+    {{ fechaActual | date : "short" }}
+  </div>
+  <div class="alert alert-primary" role="alert">
+    {{ fechaActual | date : "long" }}
+  </div>
+  <div class="alert alert-primary" role="alert">
+    {{ fechaActual | date : "fullDate" }}
+  </div>
+  <div class="alert alert-primary" role="alert">
+    {{ fechaActual | date : "medium" }}
+  </div>
+  <div class="alert alert-primary" role="alert">
+    {{ fechaActual | date : "dd/MM/yyyy" }}
+    {{ fechaActual | date : "HH:mm:ss" }}
+  </div>
+
+  <div class="alert alert-success" role="alert">
+    {{ nombres | uppercase }}
+  </div>
+  <div class="alert alert-success" role="alert">
+    {{ nombres | titlecase }}
+  </div>
+
+  <div class="alert alert-danger" role="alert">
+    {{ monto | currency : "S/." }}
+  </div>
+  <div class="alert alert-danger" role="alert">
+    {{ monto | currency : "EUR" }}
+  </div>
+
+  <div class="alert alert-warning" role="alert">
+    {{ porcentaje | percent }}
+  </div>
+  <div class="alert alert-warning" role="alert">
+    {{ porcentaje | percent : "2.1-2" }}
+  </div>
+
+  <div class="alert alert-info" role="alert">
+    {{ nombres | slice : 0 : 6 }}
+  </div>
+
+  <div class="alert alert-dark" role="alert">
+    {{ persona | json }}
   </div>
 </div>
