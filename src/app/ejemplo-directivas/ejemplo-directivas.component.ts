@@ -19,10 +19,10 @@ export class EjemploDirectivasComponent {
   ];
 
   cursosLista: Curso = [
-    { id: 1, nombre: 'Angular', profesor: 'Sergio' },
-    { id: 2, nombre: 'React', profesor: 'Juan' },
-    { id: 3, nombre: 'Vue', profesor: 'Maria' },
-    { id: 4, nombre: 'Svelte', profesor: 'Pedro' },
+    { id: 1, nombre: 'Angular', precio: 1230 },
+    { id: 2, nombre: 'React', precio: 4030 },
+    { id: 3, nombre: 'Vue', precio: 2030 },
+    { id: 4, nombre: 'Svelte', precio: 4050 },
   ];
 
   verAlumnos() {
@@ -43,5 +43,5 @@ type Alumno = Array<{
 type Curso = Array<{
   id: number;
   nombre: string;
-  profesor: string;
+  precio: number;
 }>;

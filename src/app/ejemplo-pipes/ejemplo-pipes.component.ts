@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './ejemplo-pipes.component.html',
-  styleUrl: './ejemplo-pipes.component.css'
+  styleUrl: './ejemplo-pipes.component.css',
 })
 export class EjemploPipesComponent {
-
+  fechaActual = new Date();
 }
